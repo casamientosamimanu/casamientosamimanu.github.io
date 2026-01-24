@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta property="og:image"
+        content="https://evnt.ar/storage/254/portada/desktop_images/1.JPG">
+    <meta property="og:title" content="Sami y Manu - 11 de abril">
+    <meta property="og:description" content="¡Nos casamos! Te esperamos el 11 de abril de 2026 en Janos Quinta, Del Viso">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="">
+    <meta name="csrf-token" content="0800ZVlXJBi7QflzB4rqQAVbVMt8mFK3AXMP9jry">
+
+    <title>Casamiento de Sami y Manu - 11 de abril</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="assets/css/style.css%3Fbuild=@version.1.css" />
+    <link rel="stylesheet" href="assets/js/wow/animate.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/icons/css/all.css" rel="stylesheet">
+    <style>
+        body,
+        header {
+            background-color: #f3f1ed;
+        }
+
+        h2,
+        h3,
+        .countdown .timer div,
+        header h1 {
+            font-family: "Parisienne", cursive;
+        }
+
+        header h1,
+        .cover .text i,
+        .timer div,
+        .countdown p,
+        .countdown a i,
+        .events .item i,
+        .social .item i,
+        .video span,
+        .gallery span,
+        .hotels span,
+        .hotels i,
+        .hotels .list a i,
+        .gallery i,
+        .gifts i,
+        .modalGift h3,
+        .modalGift .item .right p b,
+        .modalGift .item .right .list a h4,
+        .modalGift .closeModal i,
+        .invites i,
+        .invites span,
+        .confirmation .link i,
+        .confirmation .modalGift .contenido-modal .form label,
+        .confirmation .modalGift .contenido-modal span,
+        .confirmation .modalGift .contenido-modal .thanks i,
+        footer p i,
+        .content .info .text i,
+        .cover .text h1,
+        .cover.full.design .text h2,
+        .cover.design .text h2 {
+            color: #e2bf83;
+        }
+
+        .story,
+        .gifts a,
+        .gifts button,
+        .gifts,
+        .confirmation,
+        .confirmation .modalGift .contenido-modal .form .container .checkmark:after,
+        .confirmation .modalGift .contenido-modal .form button,
+        .salon .item .right a,
+        .player .icon {
+            background-color: #e2bf83;
+        }
+
+        .modalGift .contenido-modal .item .right .list a {
+            background-color: transparent;
+        }
+
+        /* Galería con filas horizontales y verticales alternadas */
+        .gallery .wall {
+            max-width: 1200px;
+            margin: 48px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .gallery .wall .row {
+            display: flex;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .gallery .wall .row.horizontal .image {
+            flex: 1;
+            padding-bottom: 25%;
+        }
+
+        .gallery .wall .row.vertical .image {
+            flex: 1;
+            padding-bottom: 50%;
+        }
+
+        .gallery .wall .image {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .gallery .wall .image img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery .wall .image:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .slider .image:first-child > img {
+                margin-left: 100%;
+            }
+            
+            .slider .image:nth-of-type(2) > img {
+                margin-left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ************************************************************************************************************
+                            INVITACIÓN
+        **************************************************************************************************************-->
+    <div class="intro" id="intro">
+        <div class="top" id="top">
+            <div class="badge animate__animated animate__zoomIn" data-wow-delay="0.3s" onclick="animar();"
+                data-wow-offset="0">
+                <img src="storage/254/intro_animada/stamp_image/Xl5Bn6nQgvQH33EDFwy0z9SOqxuLwxXjnrJs5N4n.png" />
+            </div>
+            <img src="assets/images/envelopet.png" class="top hiddenM  animate__animated animate__slideInDown"
+                data-wow-offset="0" />
+            <img src="assets/images/envelopetm.png" class="top hiddenL  animate__animated animate__slideInDown"
+                data-wow-offset="0" />
+        </div>
+        <div class="bottom" id="bottom"></div>
+    </div>
+    <script src="assets/js/envelope.js"></script>
+
+    <span class="player" id="button">
+        <div class="icon"><img src="assets/images/pause.png" /></div>
+    </span>
+    <audio id="player" loop>
+        <source src="https://dn720300.ca.archive.org/0/items/y-2mate.com-extreme-more-than-words-official-music-video/y2mate.com%20-%20Extreme%20%20More%20Than%20Words%20Official%20Music%20Video.mp3" type="audio/mp3" />
+    </audio>
+
+
+    <section class="cover full">
+        <div class="text">
+
+            <h1>Sami y Manu</h1>
+            <h2>¡Nos Casamos!</h2>
+            <p>y queremos compartirlo con vos</p>
+            <i class="fal fa-angle-down wow animate__animated animate__fadeInDown" data-wow-iteration="infinite"
+                data-wow-duration="1.5s" data-wow-offset="0"></i>
+        </div>
+        <div class="slider" id="slider">
+            <div class='image'><img
+                    src="storage/254/portada/desktop_images/1.JPG"></div>
+            <div class='image'><img
+                    src="storage/254/portada/desktop_images/2.jpg" style="margin-left: 33%;"></div>
+            <div class='image'><img
+                    src="storage/254/portada/desktop_images/3.jpg"></div>
+        </div>
+    </section>
+
+
+    <script src="assets/js/slider.js"></script>
+
+    <section class="content wow animate__animated animate__fadeInUp">
+        <div class="info">
+            <div class="text">
+                <lord-icon src="https://cdn.lordicon.com/aydxrkfl.json" trigger="loop" state="hover-heartbeat-alt"
+                    stroke="light" delay="500" colors="primary:#666,secondary:#e2bf83"
+                    style="width:70px;height:70px"></lord-icon>
+                <p>Esto es un ejemplo, donde podrás ver las principales características que incluyen nuestras
+                    invitaciones.<br><br>
+
+                    Todos los módulos, contenidos, fotos, textos, colores y tipo de letra, son opcionales y se
+                    personalizan 100% para tu evento.<br><br>
+
+                    Esperamos que te guste!</p>
+                <!--                    <a href="#">Ver más</a>-->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="countdown wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"
+        style=" background-image: url(''); background-repeat:repeat-x;">
+        <lord-icon class="icon" src="https://cdn.lordicon.com/mzfjzfjs.json" trigger="loop" state="" stroke="light"
+            delay="300" colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+        <br />
+        <p>Agendá la fecha</p>
+        <h2>11 de abril</h2>
+
+        <div id="countdown" class="timer" data-init-value="04/11/2026 21:00:00">
+            <div>
+                <div id="days"></div><span>Días</span>
+            </div>
+            <div class="point">:</div>
+            <div>
+                <div id="hs"></div><span>Hs</span>
+            </div>
+            <div class="point">:</div>
+            <div>
+                <div id="min"></div><span>Min</span>
+            </div>
+            <div class="point">:</div>
+            <div>
+                <div id="seg"></div><span>Seg</span>
+            </div>
+        </div>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20260412T000000Z%2F20260412T080000Z&amp;details=%0A&amp;location=&amp;text=Boda Sami y Manu"
+            target="_blank"><i class="fa-regular fa-calendar-check"></i>Agendar fecha</a>
+    </section>
+    <script src="assets/js/countdown.js"></script>
+    <section class="events" style=" background-image: url(''); background-repeat:repeat-x;">
+        <article class="item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            <lord-icon src="https://cdn.lordicon.com/czmrowis.json" trigger="loop" state="" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Civil</h2>
+            <div>
+
+                <div class="txt"
+                    style="border-bottom: 1px solid rgba(135, 135, 135, 0.2); margin-bottom:15px; padding-bottom:15px;">
+                    <div class="date">
+                        <p>10</p>
+                        <span>Abril</span>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="date">
+                        <p>10:15</p>
+                        <span>Horas</span>
+                    </div>
+                </div>
+                <div class="place">
+                    <p><b>Registro Civil de Manuel Alberti</b></p>
+                    <p>SANTA RITA N° 1417 ESQ. Mariano Paillette</p>
+                </div>
+            </div>
+
+            <a href="https://www.google.com/maps?q=SANTA+RITA+N°+1417+ESQ.+PAILLETTI" target="_blank">Cómo llegar</a>
+        </article>
+        <!-- <article class="item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            <lord-icon src="https://cdn.lordicon.com/fshosubk.json" trigger="loop" state="" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Ceremonia</h2>
+            <div>
+
+                <div class="txt"
+                    style="border-bottom: 1px solid rgba(135, 135, 135, 0.2); margin-bottom:15px; padding-bottom:15px;">
+                    <div class="date">
+                        <p>21</p>
+                        <span>Diciembre</span>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="date">
+                        <p>20:00</p>
+                        <span>Horas</span>
+                    </div>
+                </div>
+                <div class="place">
+                    <p><b>Parroquia Nuestra Señora del Rosario</b></p>
+                    <p>Bonpland 1987, Buenos Aires</p>
+                </div>
+            </div>
+
+            <a href="https://maps.google.com/" target="_blank">Cómo llegar</a>
+        </article> -->
+        <article class="item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            <lord-icon src="https://cdn.lordicon.com/yvgmrqny.json" trigger="loop" state="" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Festejo</h2>
+            <div>
+
+                <div class="txt"
+                    style="border-bottom: 1px solid rgba(135, 135, 135, 0.2); margin-bottom:15px; padding-bottom:15px;">
+                    <div class="date">
+                        <p>21</p>
+                        <span>Diciembre</span>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="date">
+                        <p>21:00</p>
+                        <span>Horas</span>
+                    </div>
+                </div>
+                <div class="place">
+                    <p><b>Janos Quinta</b></p>
+                    <p>Del Viso, Buenos Aires</p>
+                </div>
+            </div>
+
+            <a href="https://www.google.com/maps?q=Janos+Quinta,+Del+Viso,+Buenos+Aires,+Argentina" target="_blank">Cómo llegar</a>
+        </article>
+        <article class="item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            <lord-icon src="https://cdn.lordicon.com/dkyhucjt.json" trigger="loop" state="" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Dress Code</h2>
+            <div>
+                <div class="place">
+                    <p><b>Formal - Elegante</b></p>
+                    <p>El Blanco tonos claros y el rojo quedan reservado para la novia.</p>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <section class="story">
+        <div class="image wow animate__animated animate__fadeInLeft">
+            <img src="storage/254/galería/galery_images/9.JPG" alt="Nuestra Historia" />
+        </div>
+        <div class="text wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <lord-icon src="https://cdn.lordicon.com/aydxrkfl.json" trigger="loop" state="hover-heartbeat-alt"
+                stroke="light" delay="300" colors="primary:#fff,secondary:#fff"
+                style="width:70px;height:70px"></lord-icon>
+            <h2>Nuestra Historia</h2>
+            <p>Dicen que todos los caminos conducen a Roma. Como los nuestros, que un día de Septiembre hace algunos
+                años, con una selfie y un desayuno dieron como resultado atardeceres en la playa y el comienzo de un
+                amor de verano.<br><br>
+
+                Luego vinieron viajes, muchas risas, una mudanza, momentos compartidos en familia y aventuras con
+                amigos. Un amor de verano que se transformó en uno para toda la vida</p>
+            <!--<a href="#">Ver más</a>-->
+        </div>
+    </section>
+
+    <section class="gallery" style=" background-image: url(''); background-repeat:repeat-x;">
+        <lord-icon class="wow animate__animated animate__fadeInUp icon" data-wow-duration="1s"
+            src="https://cdn.lordicon.com/wsaaegar.json" trigger="loop" state="hover-flash" stroke="light" delay="300"
+            colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+        <br />
+        <span class="wow animate__animated animate__fadeInUp" data-wow-duration="1s">Momentos únicos</span>
+        <h2 class="wow animate__animated animate__fadeInUp" data-wow-duration="1s">Álbum de Fotos</h2>
+        <div class="wall">
+            <!-- Fila horizontal -->
+            <div class="row horizontal">
+                <div class="image wow animate__animated animate__fadeInUp" data-wow-duration="1s"><img
+                        onclick="openModal(); currentSlide('1')"
+                        src="storage/254/galería/galery_images/5.jpg" border="0" />
+                </div>
+                <div class="image wow animate__animated animate__fadeInUp" data-wow-duration="1s"><img
+                        onclick="openModal(); currentSlide('2')"
+                        src="storage/254/historia/image/4.jpg" border="0" />
+                </div>
+                <div class="image wow animate__animated animate__fadeInUp" data-wow-duration="1s"><img
+                        onclick="openModal(); currentSlide('3')"
+                        src="storage/254/galería/galery_images/6.jpg" border="0" />
+                </div>
+            </div>
+            <!-- Fila vertical -->
+            <div class="row vertical">
+                <div class="image wow animate__animated animate__fadeInUp" data-wow-duration="1s"><img
+                        onclick="openModal(); currentSlide('4')"
+                        src="storage/254/galería/galery_images/12.jpg" border="0" />
+                </div>
+                <div class="image wow animate__animated animate__fadeInUp" data-wow-duration="1s"><img
+                        onclick="openModal(); currentSlide('5')"
+                        src="storage/254/galería/galery_images/10.jpg" border="0" />
+                </div>
+                <div class="image wow animate__animated animate__fadeInUp" data-wow-duration="1s"><img
+                        onclick="openModal(); currentSlide('6')"
+                        src="storage/254/galería/galery_images/13.jpg" border="0" />
+                </div>
+                <div class="image wow animate__animated animate__fadeInUp" data-wow-duration="1s"><img
+                        onclick="openModal(); currentSlide('7')"
+                        src="storage/254/galería/galery_images/8.jpg" border="0" />
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()"><i class="fa-thin fa-times"></i></span>
+            <div class="modal-content">
+
+                <div class="mySlides"><img
+                        src="storage/254/galería/galery_images/5.jpg"
+                        border="0" /></div>
+                <div class="mySlides"><img
+                        src="storage/254/historia/image/4.jpg"
+                        border="0" /></div>
+                <div class="mySlides"><img
+                        src="storage/254/galería/galery_images/6.jpg"
+                        border="0" /></div>
+                <div class="mySlides"><img
+                        src="storage/254/galería/galery_images/12.jpg"
+                        border="0" /></div>
+                <div class="mySlides"><img
+                        src="storage/254/galería/galery_images/10.jpg"
+                        border="0" /></div>
+                <div class="mySlides"><img
+                        src="storage/254/galería/galery_images/13.jpg"
+                        border="0" /></div>
+                <div class="mySlides"><img
+                        src="storage/254/galería/galery_images/8.jpg"
+                        border="0" /></div>
+
+            </div>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa-thin fa-angle-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-thin fa-angle-right"></i></a>
+            <div class="layer" onclick="closeModal()"></div>
+        </div>
+    </section>
+    <section class="social" style=" background-image: url(''); background-repeat:repeat-x;">
+        <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" style="max-width: 800px; margin: 0 auto 40px auto; padding: 0 20px; font-size: 16px; color: #666; line-height: 1.6; text-align: center;">
+            Tendremos fotógrafos profesionales, así que no se preocupen. Pero si aún así quieren compartir sus fotos casuales del antes, durante y después del evento, ¡nos encantaría verlas!
+        </p>
+        <article class="item wow animate__animated animate__fadeInUp">
+            <lord-icon src="https://cdn.lordicon.com/wsaaegar.json" trigger="loop" state="hover-flash" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Google Drive</h2>
+            <div>
+                <p>Comparte tus fotos y videos directamente con nosotros en nuestro álbum privado.</p>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1N891tz_hfSCkpvdWfr6zuy6IOxNcQRhF" target="_blank">Subir fotos</a>
+        </article>
+        <article class="item wow animate__animated animate__fadeInUp">
+            <lord-icon src="https://cdn.lordicon.com/tgyvxauj.json" trigger="loop" state="s" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Instagram</h2>
+            <div>
+                <p>Sumate a la boda compartiendo fotos y videos con nuestro hashtag.</p>
+            </div>
+            <a href="https://www.instagram.com/explore/tags/aquinezboda/" target="_blank">#aquinezboda</a>
+        </article>
+
+    </section>
+
+    <section class="confirmation">
+        <div class="wow animate__animated animate__fadeInUp">
+            <lord-icon src="https://cdn.lordicon.com/heqlbljj.json" trigger="loop" state="s" stroke="light" delay="300"
+                colors="primary:#fff,secondary:#fff" style="width:70px;height:70px"></lord-icon>
+            <br />
+            <span>RSVP</span>
+            <h2>Confirmación de Asistencia</h2>
+            <p>Esperamos contar con tu presencia</p>
+            <p style='max-width: 790px; margin-top: 10px;'>Por favor confirmar antes del 15 de Febrero del 2026</p>
+            <!-- <p style='max-width: 790px; margin-top: 10px;'>Dejar los campos de acompañantes vacíos si no los tenés, te recordamos que no se permiten ni niños ni bebés.</p> -->
+
+            <!-- DETALLES EXTRA -->
+
+
+            <a class="link" href="https://invitados.janoseventos.com/?q=NDM2ODV8MTc3NTYwNzk2MQ.7ONrSOYBAE7-fhioecktyaqS1_x6VaoYBPx92qF7Gek" target="_blank" style="padding:15px 32px; display: inline-block; text-decoration: none;"><i
+                    class="fa-regular fa-circle-check" style="margin-right:10px"></i>Confirmar Asistencia</a>
+        </div>
+        <div class="modalGift" id="myModal2">
+            <div class="contenido-modal">
+                <span class="closeModal"><i class="fa-regular fa-xmark"></i></span>
+                <div class="cont">
+                    <span>RSVP</span>
+                    <h2>Confirmación de Asistencia</h2>
+
+                    <div class="form">
+                        <div class="msj error" style="display:none">Por favor completa todos los campos</div>
+                        <form onsubmit="sendConfirmation(event, this)"
+                            action="https://evnt.ar/api/boda/confirm-invitation">
+                            <div class="radio">
+                                <label class="container">Asistiré
+                                    <input type="radio" checked="checked" value="si" name="asistencia">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">No Asistiré
+                                    <input type="radio" value="no" name="asistencia">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <input type="hidden" name="asiste" id="asiste" value="si" />
+
+                            <label>Nombre y Apellido</label>
+                            <input type="text" name="nombre" id="nombre" value="" />
+
+
+
+
+                            <label>¿Necesitas un menú especial?</label>
+                            <div class="selectField">
+                                <i class="fa-regular fa-angle-down"></i>
+                                <select name="alimento" id="alimentos"
+                                    onchange="javacript: var typename = this.options[selectedIndex].text; document.getElementById('alimento').value = typename;">
+                                    <option value="Ninguno">Ninguno</option>
+                                    <option value="Celiaco">Celiaco</option>
+                                    <option value="Vegetariano">Vegetariano</option>
+                                    <option value="Vegano">Vegano</option>
+                                    <option value="Diabético">Diabético</option>
+                                    <option value="Kosher">Kosher</option>
+                                    <!--<option value="valor">valor</option>-->
+                                </select>
+                            </div>
+
+                            <label>¿Requieres traslado?</label>
+                            <div class="selectField">
+                                <i class="fa-regular fa-angle-down"></i>
+                                <select name="traslado" id="traslados"
+                                    onchange="javacript: var typename = this.options[selectedIndex].text; document.getElementById('traslado').value = typename;">
+                                    <option value="No, voy por mis propios medios">No, voy por mis propios medios
+                                    </option>
+                                    <option value="Si, necesito traslado">Si, necesito traslado</option>
+
+
+                                    <!--                                    <option value="valor">valor</option>-->
+                                </select>
+                            </div>
+
+                            <label>Apellido y nombres de acompañantes (si corresponde)</label>
+                            <input type="text" name="nombre_a" id="nombre_a" />
+
+                            <label>Comentarios</label>
+                            <input name="comentarios" id="comentarios" />
+
+
+                            <button class="submit" type="submit" name="save" style=""><i
+                                    class="fa-regular fa-check-circle"></i>Confirmar Asistencia</button>
+                            <div id="data"></div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="thanks" style="display:none;">
+                    <lord-icon src="https://cdn.lordicon.com/qgtkfluv.json" trigger="in" delay="300" state="in-reveal"
+                        stroke="light" colors="primary:#666,secondary:#e2bf83"
+                        style="width:250px;height:250px"></lord-icon>
+                    <h2>¡Esto es un ejemplo! Si te interesa una invitación así para tu evento, contactanos!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gifts"
+        style="background-image: url('storage/254/regalos/background_image/GYOJMsHu3otfFq2eZ4tzaOlvAN3ilOd68eKCn9XH.jpg');">
+        <div class="card wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+
+            <lord-icon src="https://cdn.lordicon.com/kezeezyg.json" trigger="loop" state="" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Regalos</h2>
+            <p>Que formes parte de un día tan especial
+                es lo más importante para nosotros, pero si quieres
+                colaborar con el viaje de nuestros sueños
+                puedes dejar tu granito de arena aquí:</p>
+
+            <div style=" text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 20px; font-weight: 600;">Transferencia:</h3>
+                <p style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <b>Alias: </b> 
+                    <span>casamiento.samimanu</span>
+                    <i class="fa-regular fa-copy" onclick="copiarAlias(this)" style="cursor: pointer; font-size: 16px;" title="Copiar alias"></i>
+                    <span class="alias-copy-msg" style="font-size: 12px; color: #e2bf83; display: none;"></span>
+                </p>
+                <p style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px; font-size: 12px;">
+                    <b>CBU: </b> 
+                    <span>0000003100061524418575</span>
+                    <i class="fa-regular fa-copy" onclick="copiarCBU(this)" style="cursor: pointer; font-size: 16px;" title="Copiar CBU"></i>
+                    <span class="cbu-copy-msg" style="font-size: 12px; color: #e2bf83; display: none;"></span>
+                </p>
+                <!-- <button class="modal-button" href="#myModal1">Ver datos bancarios</button> -->
+                <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 20px; font-weight: 600;">Buzón en Salón</h3>
+                <p style="margin-bottom: 20px;">En caso que prefieras hacernos un regalo en efectivo, tendrás a disposición un buzón en el salón durante la recepción.</p>
+            </div>
+        </div>
+
+
+        <div class="modalGift" id="myModal1">
+            <div class="contenido-modal">
+                <span class="closeModal"><i class="fa-regular fa-xmark"></i></span>
+
+                <!-- REGALO 1 = CUENTA 1 -->
+                <div class="item">
+                    <div class="left">
+                        <h3>Datos bancarios</h3>
+                    </div>
+                    <div class="right">
+                        <p><b>Cuenta:</b> Mercado Pago</p>
+                        <p><b>Titular:</b> Manuel Agustin Aquino</p>
+                        <p><b>Alias:</b> casamiento.samimanu</p>
+                        <p style="margin-top: 20px;"><b>CBU:</b></p>
+                        <input type="text" disabled="disabled" value="0000003100061524418575" id="GfGInput">
+                        <p id="gfg" class="gfg"></p>
+                        <span onclick="GeeksForGeeks(this)" data-copy-text="Copiado en portapapeles!" value="Copy"><i
+                                class="fa-regular fa-copy"></i>Copiar CBU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content full"
+        style="background-image:url('storage/254/galería/galery_images/11.jpg');">
+        <div class="info">
+            <div class="text wow animate__animated animate__fadeInUp">
+
+                <h2>La medida del amor es amar sin medida</h2>
+                <p>San Agustín</p>
+                <!--          <a href="#">Ver más</a>-->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hecho con <i class="fa-regular fa-heart"></i> por La novia y <a href="https://www.linkedin.com/in/aquinomanuel/" target="_blank">El novio</a></p>
+    </footer>
+
+    <!-- ************************************************************************************************************
+                            SCRIPTS
+        **************************************************************************************************************-->
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        $("input").change(function () {
+
+            $("#asiste").val($("input:checked").val());
+
+        });
+        function sendConfirmation(event, form) {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            /* var asiste = $("#asiste").val();
+             var alimento = $("#alimento").val();
+             var nombre = $("#nombre").val();
+             var nombre_a = $("#nombre_a").val();
+             var traslado = $("#traslado").val();
+             var mail = $("#mail").val();
+             var telefono = $("#telefono").val();
+             var comentarios = $("#comentarios").val();*/
+            /*
+            var dataString = 'asiste=' + asiste + '&nombre=' + nombre + '&alimento=' + alimento + '&nombre_a=' + nombre_a + '&traslado=' + traslado + '&mail=' + mail + '&telefono=' + telefono + '&comentarios=' + comentarios;
+            if (nombre === '')
+            {
+                $('.error').fadeOut(200).show();
+            } else
+            {*/
+            if (data.nombre === '') {
+                $('.error').fadeOut(200).show();
+            } else
+                fetch(form.action, {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: {
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(async response => {
+                        const statusCode = response.status;
+                        const text = await response.text();
+                        const data = text ? JSON.parse(text) : {};
+                        return ({ statusCode, data });
+                    })
+                    .then(async ({ statusCode, data }) => {
+                        if (statusCode === 201) {
+                            $('.thanks').fadeIn(200).show();
+                            $('.cont').fadeOut(200).hide();
+                            $("#data").html(data);
+                        } else {
+                            console.error(data);
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            //}
+        }
+
+    </script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="assets/js/wow/wow.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow', // default
+                animateClass: 'animate__animated', // default
+                offset: 110, // default
+                mobile: true, // default
+                live: true        // default
+            }
+        )
+        wow.init();
+
+        function GeeksForGeeks(clickable) {
+            let copyGfGText = document.getElementById("GfGInput");
+            let copyText = clickable.dataset.copyText;
+
+            navigator.clipboard.writeText(copyGfGText.value)
+                .then(() => {
+                    document.getElementById("gfg").innerHTML =
+                        "<i class='fa fa-circle-check'></i> " + copyText;
+                })
+                .catch(err => {
+                    console.error("Error al copiar: ", err);
+                });
+        }
+
+        function copiarAlias(icon) {
+            const alias = "casamiento.samimanu";
+            const parent = icon.closest('p');
+            const msgElement = parent.querySelector('.alias-copy-msg');
+            
+            navigator.clipboard.writeText(alias)
+                .then(() => {
+                    if (msgElement) {
+                        msgElement.textContent = "Copiado!";
+                        msgElement.style.display = "inline";
+                        setTimeout(() => {
+                            msgElement.style.display = "none";
+                        }, 2000);
+                    }
+                })
+                .catch(err => {
+                    console.error("Error al copiar alias: ", err);
+                });
+        }
+
+        function copiarCBU(icon) {
+            const cbu = "0000003100061524418575";
+            const parent = icon.closest('p');
+            const msgElement = parent ? parent.querySelector('.cbu-copy-msg') : null;
+            
+            navigator.clipboard.writeText(cbu.trim())
+                .then(() => {
+                    if (msgElement) {
+                        msgElement.textContent = "Copiado!";
+                        msgElement.style.display = "inline";
+                        setTimeout(() => {
+                            msgElement.style.display = "none";
+                        }, 2000);
+                    }
+                })
+                .catch(err => {
+                    console.error("Error al copiar CBU: ", err);
+                    const fallbackText = document.createElement('textarea');
+                    fallbackText.value = cbu;
+                    fallbackText.style.position = 'fixed';
+                    fallbackText.style.opacity = '0';
+                    document.body.appendChild(fallbackText);
+                    fallbackText.select();
+                    try {
+                        document.execCommand('copy');
+                        if (msgElement) {
+                            msgElement.textContent = "Copiado!";
+                            msgElement.style.display = "inline";
+                            setTimeout(() => {
+                                msgElement.style.display = "none";
+                            }, 2000);
+                        }
+                    } catch (e) {
+                        console.error("Error con método alternativo: ", e);
+                    }
+                    document.body.removeChild(fallbackText);
+                });
+        }
+
+        var button = document.getElementById("button");
+        var audio = document.getElementById("player");
+        button.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = "<div class='icon'><img src='assets/images/play.gif'/></div>";
+            } else {
+                audio.pause();
+                button.innerHTML = "<div class='icon'><img src='assets/images/pause.png'/></div>";
+            }
+        });
+    </script>
+</body>
+
+</html>
