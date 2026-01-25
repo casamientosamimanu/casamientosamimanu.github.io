@@ -857,8 +857,18 @@
 
         var button = document.getElementById("button");
         var audio = document.getElementById("player");
+        
+        // Establecer el tiempo inicial a 7 segundos cuando el audio se carga
+        audio.addEventListener('loadedmetadata', function() {
+            audio.currentTime = 7;
+        });
+        
         button.addEventListener("click", function () {
             if (audio.paused) {
+                // Si el audio está al inicio, empezar desde el segundo 7
+                if (audio.currentTime < 7) {
+                    audio.currentTime = 7;
+                }
                 audio.play();
                 button.innerHTML = "<div class='icon'><img src='assets/images/play.gif'/></div>";
             } else {
