@@ -132,6 +132,20 @@
             transform: scale(1.1);
         }
 
+        .social {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .social-items-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 24px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        
         @media (max-width: 768px) {
             .slider .image:first-child > img {
                 margin-left: 100%;
@@ -139,6 +153,16 @@
             
             .slider .image:nth-of-type(2) > img {
                 margin-left: 33%;
+            }
+            
+            .social-items-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .social-items-row .item {
+                width: 100%;
+                padding: 0px 30px;
             }
         }
     </style>
@@ -200,14 +224,11 @@
                 <lord-icon src="https://cdn.lordicon.com/aydxrkfl.json" trigger="loop" state="hover-heartbeat-alt"
                     stroke="light" delay="500" colors="primary:#666,secondary:#e2bf83"
                     style="width:70px;height:70px"></lord-icon>
-                <p>Esto es un ejemplo, donde podrás ver las principales características que incluyen nuestras
-                    invitaciones.<br><br>
-
-                    Todos los módulos, contenidos, fotos, textos, colores y tipo de letra, son opcionales y se
-                    personalizan 100% para tu evento.<br><br>
-
-                    Esperamos que te guste!</p>
-                <!--                    <a href="#">Ver más</a>-->
+                <p>Se acerca La fecha!<br><br>
+                    Después de tantos momentos compartidos, llega el más importante: Nuestro casamiento!<br><br>
+                    Con mucho amor e ilusión te invitamos a celebrar uno de los mejores días de nuestras vidas!<br><br>
+                    Deseamos que disfrutes de esta experiencia al máximo! Al ser un evento solo para adultos, recordamos que la invitación es personal y exclusiva. Gracias de corazón por hacer el esfuerzo de acompañarnos en nuestro día!<br><br>
+                    Al final de la invitación encontrarás el link para confirmar la asistencia.</p>
             </div>
 
         </div>
@@ -337,8 +358,9 @@
             <h2>Dress Code</h2>
             <div>
                 <div class="place">
-                    <p><b>Formal - Elegante</b></p>
-                    <p>El Blanco tonos claros y el rojo quedan reservado para la novia.</p>
+                    <p><b>Elegante | Elegante sport</b></p>
+                    <p>El Blanco queda reservado para la novia. 
+                        Evitar blanco o similares y el rojo.</p>
                 </div>
             </div>
 
@@ -353,14 +375,50 @@
             <lord-icon src="https://cdn.lordicon.com/aydxrkfl.json" trigger="loop" state="hover-heartbeat-alt"
                 stroke="light" delay="300" colors="primary:#fff,secondary:#fff"
                 style="width:70px;height:70px"></lord-icon>
-            <h2>Nuestra Historia</h2>
-            <p>Dicen que todos los caminos conducen a Roma. Como los nuestros, que un día de Septiembre hace algunos
-                años, con una selfie y un desayuno dieron como resultado atardeceres en la playa y el comienzo de un
-                amor de verano.<br><br>
-
-                Luego vinieron viajes, muchas risas, una mudanza, momentos compartidos en familia y aventuras con
-                amigos. Un amor de verano que se transformó en uno para toda la vida</p>
-            <!--<a href="#">Ver más</a>-->
+                <section class="nuestra-historia">
+                    <h2>✨ Nuestra Historia ✨</h2>
+                    <br>
+                  
+                    <p>
+                      No imaginábamos tanto amor 💕, allá por el 2009 cuando cruzamos apenas unas primeras palabras, 
+                      en la era del MSN y Facebook ¡un montón!
+                    </p>
+                    <br>
+                  
+                    <p>
+                      Amistades en común  derivaron en muchas salidas , luego largas charlas, 
+                      y pronto “coincidiendo” en cumpleaños y hasta viajes. 
+                      ¡Gracias a esos amigos y familia por bancar cada locura!
+                    </p>
+                    <br>
+                  
+                    <p>
+                      Después de muchos años, miedos e incertidumbres de por medio, reconocimos que no podíamos 
+                      estar el uno sin el otro. Y quisimos apostar por nuestro amor. 
+                      Así empezamos una nueva etapa de pareja y en familia.
+                    </p>
+                    <br>
+                  
+                    <p>
+                      Atravesamos la pandemia, adoptamos a Cookie 🐶 (fiel testigo de esta historia) 
+                      y vivimos juntos.
+                    </p>
+                    <br>
+                  
+                    <p>
+                      Hoy, después de 7 años de novios, muchos mates, muchos viajes , risas, 
+                      llantos y proyectos, estamos muy felices de amarnos en voz alta
+                      y decirnos que <strong>Sí</strong> ante todos y para toda la vida 💖✨.
+                    </p>
+                    <br>
+                  
+                    <p>
+                      ¡Estamos listos para esta nueva aventura!! 🚀💫
+                    </p>
+                    <br>
+                  
+                    <p><strong>Sami y Manu</strong> 💕👰🤵</p>
+                  </section>
         </div>
     </section>
 
@@ -440,31 +498,34 @@
             <div class="layer" onclick="closeModal()"></div>
         </div>
     </section>
-    <section class="social" style=" background-image: url(''); background-repeat:repeat-x;">
-        <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" style="max-width: 800px; margin: 0 auto 40px auto; padding: 0 20px; font-size: 16px; color: #666; line-height: 1.6; text-align: center;">
+    <section class="social">
+        <article class="item wow animate__animated animate__fadeInUp" style="width: 100%; max-width: 800px; margin: 0 auto;">       
+            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" style="max-width: 800px; margin: 0 auto 40px auto; padding: 0 20px; font-size: 16px; color: #666; line-height: 1.6; text-align: center;">
             Tendremos fotógrafos profesionales, así que no se preocupen. Pero si aún así quieren compartir sus fotos casuales del antes, durante y después del evento, ¡nos encantaría verlas!
         </p>
-        <article class="item wow animate__animated animate__fadeInUp">
-            <lord-icon src="https://cdn.lordicon.com/wsaaegar.json" trigger="loop" state="hover-flash" stroke="light" delay="300"
-                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
-
-            <h2>Google Drive</h2>
-            <div>
-                <p>Comparte tus fotos y videos directamente con nosotros en nuestro álbum privado.</p>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1N891tz_hfSCkpvdWfr6zuy6IOxNcQRhF" target="_blank">Subir fotos</a>
         </article>
-        <article class="item wow animate__animated animate__fadeInUp">
-            <lord-icon src="https://cdn.lordicon.com/tgyvxauj.json" trigger="loop" state="s" stroke="light" delay="300"
-                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+        <div class="social-items-row" style="display: flex; align-items: flex-start; justify-content: center; gap: 24px; width: 100%; flex-wrap: wrap;">
+            <article class="item wow animate__animated animate__fadeInUp">
+                <lord-icon src="https://cdn.lordicon.com/wsaaegar.json" trigger="loop" state="hover-flash" stroke="light" delay="300"
+                    colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
 
-            <h2>Instagram</h2>
-            <div>
-                <p>Sumate a la boda compartiendo fotos y videos con nuestro hashtag.</p>
-            </div>
-            <a href="https://www.instagram.com/explore/tags/aquinezboda/" target="_blank">#aquinezboda</a>
-        </article>
+                <h2>Google Drive</h2>
+                <div>
+                    <p>Comparte tus fotos y videos directamente con nosotros en nuestro álbum privado.</p>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1N891tz_hfSCkpvdWfr6zuy6IOxNcQRhF" target="_blank">Subir fotos</a>
+            </article>
+            <article class="item wow animate__animated animate__fadeInUp">
+                <lord-icon src="https://cdn.lordicon.com/tgyvxauj.json" trigger="loop" state="s" stroke="light" delay="300"
+                    colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
 
+                <h2>Instagram</h2>
+                <div>
+                    <p>Sumate a la boda compartiendo fotos y videos con nuestro hashtag.</p>
+                </div>
+                <a href="https://www.instagram.com/explore/tags/aquinezboda/" target="_blank">#aquinezboda</a>
+            </article>
+        </div>
     </section>
 
     <section class="confirmation">
