@@ -232,10 +232,9 @@
                     Después de tantos momentos compartidos, llega el más importante: <br><b>Nuestro
                         casamiento!</b><br><br>
                     Con mucho amor e ilusión te invitamos a celebrar el mejor día de nuestras vidas!<br><br>
-                    Deseamos que disfrutes de esta experiencia al máximo! Al ser un evento solo para adultos, recordamos
-                    que la invitación es personal y exclusiva. Gracias de corazón por hacer el esfuerzo de
-                    acompañarnos!<br><br>
-                    Más abajo encontrarás el link para confirmar la asistencia.</p>
+                    Esta invitación es individual. Gracias de corazón por hacer el esfuerzo de
+                    acompañarnos, esperamos que bailes hasta el final!<br><br>
+                    Ahora, dale hasta abajo! Encontrarás el link para confirmar tu asistencia.</p>
             </div>
 
         </div>
@@ -491,8 +490,8 @@
             style="width: 100%; max-width: 800px; margin: 0 auto;">
             <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                 style="max-width: 800px; margin: 0 auto 40px auto; padding: 0 20px; font-size: 16px; color: #666; line-height: 1.6; text-align: center;">
-                Tendremos fotógrafos profesionales, así que no te preocupes. Pero si aún así queres compartir tus fotos
-                casuales del antes, durante y después del evento, nos encantaría verlas!
+                Tendremos fotógrafos profesionales, así que no te preocupes y porfa no los obstruyas. Teniendo eso en cuenta, si queres compartir tus fotos
+                casuales del antes, durante y después del evento, nos encantaría verlas! 
             </p>
         </article>
         <div class="social-items-row"
@@ -504,7 +503,7 @@
 
                 <h2>Google Drive</h2>
                 <div>
-                    <p>Comparte tus fotos y videos directamente con nosotros en nuestro álbum privado.</p>
+                    <p>Compartí tus fotos y videos directamente con nosotros en nuestro álbum privado.</p>
                 </div>
                 <a href="https://drive.google.com/drive/folders/1N891tz_hfSCkpvdWfr6zuy6IOxNcQRhF" target="_blank">Subir
                     fotos</a>
@@ -519,6 +518,69 @@
                 </div>
                 <a href="https://www.instagram.com/explore/tags/aquinezboda/" target="_blank">#aquinezboda</a>
             </article>
+        </div>
+    </section>
+
+    <section class="gifts"
+        style="background-image: url('storage/254/regalos/background_image/GYOJMsHu3otfFq2eZ4tzaOlvAN3ilOd68eKCn9XH.jpg');">
+        <div class="card wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+
+            <lord-icon src="https://cdn.lordicon.com/kezeezyg.json" trigger="loop" state="" stroke="light" delay="300"
+                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
+
+            <h2>Regalos</h2>
+            <p>Que formes parte de un día tan especial
+                es lo más importante para nosotros, pero si querés
+                colaborar con el viaje de nuestros sueños
+                te dejamos estas opciones:</p>
+
+            <div style=" text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 20px; font-weight: 600;">Transferencia:
+                </h3>
+                <p style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <b>Alias: </b>
+                    <span>casamiento.samimanu</span>
+                    <i class="fa-regular fa-copy" onclick="copiarAlias(this)" style="cursor: pointer; font-size: 16px;"
+                        title="Copiar alias"></i>
+                    <span class="alias-copy-msg" style="font-size: 12px; color: #e2bf83; display: none;"></span>
+                </p>
+                <p class="cbu-text" style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <b>CBU: </b>
+                    <span>0000003100061524418575</span>
+                    <i class="fa-regular fa-copy" onclick="copiarCBU(this)" style="cursor: pointer; font-size: 16px;"
+                        title="Copiar CBU"></i>
+                    <span class="cbu-copy-msg" style="font-size: 12px; color: #e2bf83; display: none;"></span>
+                </p>
+                <!-- <button class="modal-button" href="#myModal1">Ver datos bancarios</button> -->
+                <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 20px; font-weight: 600;">Buzón en Salón
+                </h3>
+                <p style="margin-bottom: 20px;">En caso que prefieras hacernos un regalo en efectivo, tendrás a
+                    disposición un buzón en el salón durante la recepción.</p>
+            </div>
+        </div>
+
+
+        <div class="modalGift" id="myModal1">
+            <div class="contenido-modal">
+                <span class="closeModal"><i class="fa-regular fa-xmark"></i></span>
+
+                <!-- REGALO 1 = CUENTA 1 -->
+                <div class="item">
+                    <div class="left">
+                        <h3>Datos bancarios</h3>
+                    </div>
+                    <div class="right">
+                        <p><b>Cuenta:</b> Mercado Pago</p>
+                        <p><b>Titular:</b> Manuel Agustin Aquino</p>
+                        <p><b>Alias:</b> casamiento.samimanu</p>
+                        <p style="margin-top: 20px;"><b>CBU:</b></p>
+                        <input type="text" disabled="disabled" value="0000003100061524418575" id="GfGInput">
+                        <p id="gfg" class="gfg"></p>
+                        <span onclick="GeeksForGeeks(this)" data-copy-text="Copiado en portapapeles!" value="Copy"><i
+                                class="fa-regular fa-copy"></i>Copiar CBU</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -623,68 +685,6 @@
         </div>
     </section>
 
-    <section class="gifts"
-        style="background-image: url('storage/254/regalos/background_image/GYOJMsHu3otfFq2eZ4tzaOlvAN3ilOd68eKCn9XH.jpg');">
-        <div class="card wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-
-            <lord-icon src="https://cdn.lordicon.com/kezeezyg.json" trigger="loop" state="" stroke="light" delay="300"
-                colors="primary:#666,secondary:#e2bf83" style="width:70px;height:70px"></lord-icon>
-
-            <h2>Regalos</h2>
-            <p>Que formes parte de un día tan especial
-                es lo más importante para nosotros, pero si querés
-                colaborar con el viaje de nuestros sueños
-                te dejamos estas opciones:</p>
-
-            <div style=" text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
-                <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 20px; font-weight: 600;">Transferencia:
-                </h3>
-                <p style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
-                    <b>Alias: </b>
-                    <span>casamiento.samimanu</span>
-                    <i class="fa-regular fa-copy" onclick="copiarAlias(this)" style="cursor: pointer; font-size: 16px;"
-                        title="Copiar alias"></i>
-                    <span class="alias-copy-msg" style="font-size: 12px; color: #e2bf83; display: none;"></span>
-                </p>
-                <p class="cbu-text" style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
-                    <b>CBU: </b>
-                    <span>0000003100061524418575</span>
-                    <i class="fa-regular fa-copy" onclick="copiarCBU(this)" style="cursor: pointer; font-size: 16px;"
-                        title="Copiar CBU"></i>
-                    <span class="cbu-copy-msg" style="font-size: 12px; color: #e2bf83; display: none;"></span>
-                </p>
-                <!-- <button class="modal-button" href="#myModal1">Ver datos bancarios</button> -->
-                <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 20px; font-weight: 600;">Buzón en Salón
-                </h3>
-                <p style="margin-bottom: 20px;">En caso que prefieras hacernos un regalo en efectivo, tendrás a
-                    disposición un buzón en el salón durante la recepción.</p>
-            </div>
-        </div>
-
-
-        <div class="modalGift" id="myModal1">
-            <div class="contenido-modal">
-                <span class="closeModal"><i class="fa-regular fa-xmark"></i></span>
-
-                <!-- REGALO 1 = CUENTA 1 -->
-                <div class="item">
-                    <div class="left">
-                        <h3>Datos bancarios</h3>
-                    </div>
-                    <div class="right">
-                        <p><b>Cuenta:</b> Mercado Pago</p>
-                        <p><b>Titular:</b> Manuel Agustin Aquino</p>
-                        <p><b>Alias:</b> casamiento.samimanu</p>
-                        <p style="margin-top: 20px;"><b>CBU:</b></p>
-                        <input type="text" disabled="disabled" value="0000003100061524418575" id="GfGInput">
-                        <p id="gfg" class="gfg"></p>
-                        <span onclick="GeeksForGeeks(this)" data-copy-text="Copiado en portapapeles!" value="Copy"><i
-                                class="fa-regular fa-copy"></i>Copiar CBU</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="content full" style="background-image:url('storage/254/galería/galery_images/11.jpg');">
         <div class="info">
             <div class="text wow animate__animated animate__fadeInUp">
